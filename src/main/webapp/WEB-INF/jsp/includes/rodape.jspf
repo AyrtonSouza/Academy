@@ -1,0 +1,43 @@
+        </div>
+        <nav id="rodape" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <p class="navbar-text col-sm-2">Versão 2.0</p>
+                    <p class="navbar-text col-sm-8 text-center" id="rodape-custom"><a href="http://www.institutonb.com.br/">Copyright © 2014 - Todos os Direitos reservados. Desenvolvido por: Instituto Nobre Barreto</a></p>
+                    <button type="button" class="btn btn-default navbar-btn pull-right" onclick="javascript:history.back()">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                        Voltar
+                    </button>
+                </div>             
+            </div>             
+        </nav>
+       <!--
+        <div id="modalExcluir" class="modal fade" tabindex="-1" role="dialog"
+             aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <span class="glyphicon glyphicon-remove-sign" aria-hidden="true" style="color: red;"></span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel"><fmt:message key="titulo.exclusao" /></h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><fmt:message key="titulo.exclusao" /></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-excluir" type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                            <fmt:message key="acao.excluir" />
+                        </button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+                            <fmt:message key="acao.cancelar" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence                http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="academyPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>br.com.inb.entity.Pacote</class>
+    <class>br.com.inb.entity.Usuario</class>
+    <class>br.com.inb.entity.Exercicio</class>
+    <class>br.com.inb.entity.Academia</class>
+    <class>br.com.inb.entity.Aparelho</class>
+    <class>br.com.inb.entity.Treino</class>
+    <class>br.com.inb.entity.Peso</class>
+    <class>br.com.inb.entity.Hora</class>
+    <class>br.com.inb.entity.Publicidade</class>
+    <class>br.com.inb.entity.Dia</class>
+    <class>br.com.inb.entity.MedidaFinal</class>
+    <class>br.com.inb.entity.Meses</class>
+    <properties>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/academy"/>
+      <property name="hibernate.connection.user" value="root"/>
+      <property name="hibernate.connection.password" value="root"/>
+      <property name="connection.datasource">java:/comp/env/AcademyDB</property>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="upddate"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+    </properties>
+  </persistence-unit>
+</persistence>

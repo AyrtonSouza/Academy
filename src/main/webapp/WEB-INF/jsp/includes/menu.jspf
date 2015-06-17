@@ -1,0 +1,224 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="${path}">${systemName}</a>
+    </div>
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="header-topo"><img src="${path}/resources/imgs/logo.png" width="40" height="40" align="left" style="margin-right:5px"><h4> Academy System</h4></li>
+        </ul>
+
+        <c:if test="${sessionScope.usuarioLogado.fkPermiId == 1}">    
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Pacote
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/cadPacote">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/listPacote">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Academia
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/cadAcademia">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/listAcademia">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Aparelho
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/cadAparelho">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/listAparelho">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Exercício
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/cadExercicio">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/listExercicio">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+            </ul>
+                                <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Publicidade
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/cadPublicidade">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/listPublicidade">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+            </ul>
+        </c:if>  
+        <c:if test="${sessionScope.usuarioLogado.fkPermiId == 2}">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Alunos
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/academia/cadAluno">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/academia/listAluno">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Professores
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/academia/cadProfessor">
+                                Cadastrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="${path}/academia/listProfessor">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Aparelhos
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="${path}/academia/listAparelhos">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        Exercicios
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li>
+                            <a href="${path}/academia/listExercicios">
+                                Listar
+                            </a>
+                        </li>
+                        <!--<li class="divider"></li>-->
+                    </ul>
+                </li>
+
+            </ul>
+        </c:if>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="btn-group dropdown">
+                <button id="btn-user" type="button" class="btn btn-default navbar-btn dropdown-toggle"
+                        data-toggle="dropdown" role="button">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="${path}/j_spring_security_logout">Sair
+                            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>

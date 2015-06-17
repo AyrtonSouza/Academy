@@ -1,0 +1,187 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile: Theme Download</title>
+    <link rel="stylesheet" href="themes/style.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css"/> 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<style>
+    table.tabela1 thead tr{  background-color: #111237;}
+    table.tabela1 thead th { font-size:15px; color:white; text-shadow: none}
+</style>
+</head>
+<body>
+    <div id="home" data-role="page">
+
+  <div data-role="header" data-position="fixed" style="height:48px; padding-top:10px">
+          <h3>Academy</h3>
+
+<span class="ui-icon ui-icon-bars ui-icon-shadow"> </span>
+
+         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="d" style="margin-top:10px; text-decoration: none; ">
+         </a>
+         
+         <a href="#right-panel" data-icon="arrow-l" data-iconpos="notext" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="d" style="margin-top:10px; text-decoration: none;">
+         </a>
+
+
+          
+  </div>
+  
+<div data-role="panel" id="left-panel" data-theme="c" data-display="overlay" data-position="left">
+        <ul data-role="listview" data-theme="d">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-role="list-divider">Menu</li>
+            <li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>
+            <li data-icon="back"><a href="#demo-intro" data-rel="back">Treino</a></li>
+        </ul>
+
+        <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="a" data-content-theme="a" style="margin-top:20px">
+
+          <h3>Categories</h3>
+          <div data-role="collapsible-set" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="d">
+            <div data-role="collapsible">
+              <h3>Bikes</h3>
+              <ul data-role="listview">
+                <li><a href="#">Road</a></li>
+                <li><a href="#">ATB</a></li>
+                <li><a href="#">Fixed Gear</a></li>
+                <li><a href="#">Cruiser</a></li>
+              </ul>
+            </div><!-- /collapsible -->
+            <div data-role="collapsible">
+              <h3>Cars</h3>
+              <ul data-role="listview">
+                <li><a href="#">SUV</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Convertible</a></li>
+              </ul>
+            </div><!-- /collapsible -->
+            <div data-role="collapsible">
+              <h3>Boats</h3>
+              <ul data-role="listview">
+                <li><a href="#">Runabout</a></li>
+                <li><a href="#">Motorboat</a></li>
+                <li><a href="#">Sailboat</a></li>
+              </ul>
+            </div><!-- /collapsible -->
+          </div><!-- /collapsible-set -->
+        </div><!-- /collapsible -->
+    </div><!-- /panel -->
+
+    <div data-role="panel" id="right-panel" data-display="overlay" data-position="right" data-theme="c">
+        <ul data-role="listview" data-theme="d" data-icon="false">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-role="list-divider">Share this page</li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Google +</a></li>
+            <li><a href="#">Mail</a></li>
+        </ul>
+    </div><!-- /panel -->
+
+    
+<table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive tabela1" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a"> <thead>
+    <tr class="ui-bar-d">
+        <th>Rank</th>
+        <th>Movie Title</th>
+        <th>Year</th>
+        <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Citizen Kane</td>
+      <td>1941</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Casablanca</td>
+      <td>1942</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>The Godfather</td>
+      <td>1972</td>
+      <td>97%</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Gone with the Wind</td>
+      <td>1939</td>
+      <td>96%</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Lawrence of Arabia</td>
+      <td>1962</td>
+      <td>94%</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>The Graduate</td>
+      <td>1967</td>
+      <td>91%</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>The Wizard of Oz</td>
+      <td>1939</td>
+      <td>90%</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Singin' in the Rain</td>
+      <td>1952</td>
+      <td>89%</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td class="title">Inception</td>
+      <td>2010</td>
+      <td>84%</td>
+    </tr>
+  </tbody>
+</table>
+    
+    <div data-position="fixed" data-role="footer">
+      <div data-role="navbar" style="margin:0 0 -5px;">
+        <ul>
+          <li>
+            <a data-icon="home" data-theme="a" class="ui-btn-active ui-state-persist">Home</a>
+          </li>
+          <li>
+            <a data-icon="star" data-theme="a" href="#p2" data-transition="none">Créditos</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Page: p2  -->
+  <div id="p2" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="a">
+      <h3>Page 2</h3>
+    </div>
+    <div role="main" class="ui-content"></div>
+    <div data-position="fixed" data-role="footer">
+      <div data-role="navbar" style="margin:0 0 -5px;">
+        <ul>
+          <li>
+            <a data-icon="home" data-theme="a" class href="#home" data-transition="none">BtnA</a>
+          </li>
+          <li>
+            <a data-icon="star" data-theme="a" class="ui-btn-active ui-state-persist">BtnB</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
